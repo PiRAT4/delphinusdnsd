@@ -15,6 +15,6 @@ print s
 
 # Thanks
 
-*Peter J. Philipp for the patience
-*@gonzalo for helping with post-install instructions
-*Brian Robert Callahan for the awesome [guide](https://www.youtube.com/watch?v=z_TnemhzbXQ) on how to make OpenBSD ports
+* Peter J. Philipp for the patience
+* @gonzalo for helping with post-install instructions
+* Brian Robert Callahan for the awesome [guide](https://www.youtube.com/watch?v=z_TnemhzbXQ) on how to make OpenBSD ports
