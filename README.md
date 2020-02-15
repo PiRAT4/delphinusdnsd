@@ -6,14 +6,14 @@ records.
 
 For more information please visit DelphinusDNS's [website](https://delphinusdns.org).
 
-# Installation
+## Installation
 
 ```shell
 $ doas pkg_add delphinusdnsd-1.4.1
 print s
 ```
 
-# Thanks
+## Thanks
 
 * Peter J. Philipp for the patience
 * @gonzalo for helping with post-install instructions
