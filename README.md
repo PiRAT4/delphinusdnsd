@@ -16,4 +16,4 @@ $ doas pkg_add delphinusdnsd-1.4.1
 
 * Peter J. Philipp for the patience
 * @gonzalo for helping with post-install instructions
-* Brian Robert Callahan for the awesome [guide](https://www.youtube.com/watch?v=z_TnemhzbXQ) on how to make OpenBSD ports
+* Brian Robert Callahan for this awesome [guide](https://www.youtube.com/watch?v=z_TnemhzbXQ) on how port software for OpenBSD
