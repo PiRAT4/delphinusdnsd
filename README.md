@@ -4,14 +4,17 @@ authoritative answers for A, AAAA, CNAME, DNSKEY, DS, MX, NAPTR, NS,
 NSEC3, NSEC3PARAM, PTR, RRSIG, SOA, SRV, SSHFP, TLSA, and TXT resource
 records.
 
-This is a port so OpenBSD users can install DelphinusDNS via pkg_add.
+For more information please visit DelphinusDNS's [website](https://delphinusdns.org).
 
 # Installation
 
-$ pkg_add delphinusdnsd-1.4.1
+```shell
+$ doas pkg_add delphinusdnsd-1.4.1
+print s
+```
 
 # Thanks
 
-Peter J. Philipp for the help and, especially, the patience
-@gonzalo for hellping with post-install section
-Brian Robert Callahan for the awesome video guide on how to make OpenBSD ports
+*Peter J. Philipp for the patience
+*@gonzalo for helping with post-install instructions
+*Brian Robert Callahan for the awesome [guide](https://www.youtube.com/watch?v=z_TnemhzbXQ) on how to make OpenBSD ports
