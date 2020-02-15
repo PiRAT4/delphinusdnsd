@@ -10,7 +10,6 @@ For more information please visit DelphinusDNS's [website](https://delphinusdns.
 
 ```shell
 $ doas pkg_add delphinusdnsd-1.4.1
-print s
 ```
 
 ## Thanks
