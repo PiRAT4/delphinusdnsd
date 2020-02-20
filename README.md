@@ -4,7 +4,7 @@ authoritative answers for A, AAAA, CNAME, DNSKEY, DS, MX, NAPTR, NS,
 NSEC3, NSEC3PARAM, PTR, RRSIG, SOA, SRV, SSHFP, TLSA, and TXT resource
 records.
 
-For more information please visit DelphinusDNS's [website](https://delphinusdns.org).
+For more information please visit Delphinus DNS's [homepage](https://delphinusdns.org).
 
 ## Installation
 
