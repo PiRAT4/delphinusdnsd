@@ -20,5 +20,10 @@ LDFLAGS=            -Wall -g
 CONFIGURE_STYLE =   simple
 CONFIGURE_ARGS =    --user=_ddd \
                     --location=/var/delphinusdnsd
+                    
+post-install:
+        ${INSTALL_DATA_DIR} ${PREFIX}/share/examples/delphinusdnsd
+        ${INSTALL_DATA} ${WRKDIST}/examples/Master/example1.conf \
+            ${PREFIX}/share/examples/delphinusdnsd
 
 .include <bsd.port.mk>
