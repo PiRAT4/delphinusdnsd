@@ -1,0 +1,18 @@
+--- delphinusdnsd.8.orig	Thu Feb 20 08:26:37 2020
++++ delphinusdnsd.8	Thu Feb 20 08:27:57 2020
+@@ -102,12 +102,12 @@
+ receive notifies or timeout on the refresh or retry SOA values the daemon is
+ restarted automatically. 
+ .Sh FILES
+-.Bl -tag -width /etc/delphinusdns/delphinusdns.conf -compact
+-.It Pa /etc/delphinusdns/delphinusdns.conf
++.Bl -tag -width /var/delphinusdnsd/etc/delphinusdns.conf -compact
++.It Pa /var/delphinusdnsd/etc/delphinusdns.conf
+ default 
+ .Nm
+ config file
+-.It Pa /etc/delphinusdns/replicant/
++.It Pa /var/delphinusdnsd/etc/replicant/
+ default replicant directory for AXFR zones
+ .It Pa /var/run/delphinusdnsd.sock
+ default 

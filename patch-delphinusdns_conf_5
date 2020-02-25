@@ -1,0 +1,54 @@
+--- delphinusdns.conf.5.orig	Thu Feb 20 08:31:34 2020
++++ delphinusdns.conf.5	Thu Feb 20 08:34:04 2020
+@@ -34,8 +34,8 @@
+ .Xr delphinusdnsd 8
+ has a default configfile it is called
+ .Nm
+-and it is found in /etc/delphinusdns/.  You may wonder why there is a missing 
+-d, so I ask you to look up 
++and it is found in /var/delphinusdnsd/etc/.  You may wonder why there is a 
++missing d, so I ask you to look up 
+ .Xr syslogd 8
+ and
+ .Xr syslog.conf 5
+@@ -115,7 +115,7 @@
+ }
+  
+ 
+-zinclude "/etc/delphinusdns/centroid.eu.signed";
++zinclude "/var/delphinusdnsd/master/centroid.eu.signed";
+ 
+ .Ed
+ Then the included files are output of
+@@ -139,7 +139,7 @@
+         versionstring "delphinusdnsd-20191103";
+ }
+ 
+-include "/etc/delphinusdns/delphinusdns.tsig";
++include "/var/delphinusdnsd/etc/delphinusdns.tsig";
+ 
+ rzone "ip6.centroid.eu." {
+ 	; do make sure you have a tsig "" {} for this
+@@ -147,11 +147,11 @@
+         masterport 10053;
+         master 2a01:4f8:162:e700:881c:fe60:3582:f49c;
+         zonename "ip6.centroid.eu.";
+-        filename "/etc/delphinusdns/replicant/ip6.centroid.eu.repl";
++        filename "/var/delphinusdnsd/replicant/ip6.centroid.eu.repl";
+ }
+ 
+ .Ed
+-Notice the /etc/delphinusdns/replicant/ directory, this is a hardcoded path.
++Notice the /var/delphinusdnsd/replicant/ directory, this is a hardcoded path.
+ .Sh GRAMMAR
+ Syntax for 
+ .Nm
+@@ -225,7 +225,7 @@
+ 
+ .Ed
+ .Sh FILES
+-.Pa /etc/delphinusdns/delphinusdns.conf
++.Pa /var/delphinusdnsd/etc/delphinusdns.conf
+ .Sh SEE ALSO
+ .Xr dddctl 8 , 
+ .Xr delphinusdnsd 8
