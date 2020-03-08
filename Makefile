@@ -1,6 +1,6 @@
 # $OpenBSD: Makefile,v 1.86 2019/11/19 12:39:04 espie Exp $
 
-COMMENT =           Non-caching, non-recursing authorative DNS server
+COMMENT =           Non-caching, non-recursing authoritative DNS server
 DISTNAME =          delphinusdnsd-${VERSION}
 VERSION =           1.4.1
 PKGNAME =           ${DISTNAME}
