@@ -1,0 +1,16 @@
+@comment $OpenBSD: PLIST,v$
+@newgroup _ddd:858
+@newuser _ddd:858:_ddd:default:DelphinusDNS Account:/nonexistent:/sbin/nologin
+@bin sbin/delphinusdnsd
+@bin bin/dddctl
+@man man/man8/delphinusdnsd.8
+@man man/man5/delphinusdns.conf.5
+@man man/man8/dddctl.8
+@sample /var/delphinusdnsd/
+@sample /var/delphinusdnsd/master/
+@sample /var/delphinusdnsd/replicant/
+@sample /var/delphinusdnsd/etc/
+share/examples/delphinusdnsd/
+@sample ${SYSCONFDIR}/delphinusdnsd/
+share/examples/delphinusdnsd/example1.conf
+@sample ${SYSCONFDIR}/delphinusdnsd/example1.conf
