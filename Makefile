@@ -1,6 +1,6 @@
 COMMENT =           Non-caching, non-recursing authoritative DNS server
 DISTNAME =          delphinusdnsd-${VERSION}
-VERSION =           1.4.1
+VERSION =           1.4.2
 PKGNAME =           ${DISTNAME}
 CATEGORIES =        net
 
