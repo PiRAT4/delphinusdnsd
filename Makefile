@@ -21,9 +21,11 @@ CONFIGURE_STYLE =   simple
 CONFIGURE_ARGS =    --user=_ddd \
                     --location=/var/delphinusdnsd
 
+NO_TEST =           Yes
+
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/delphinusdnsd
-	${INSTALL_DATA} ${WRKDIST}/examples/Master/example1.conf \
+	${INSTALL_DATA} ${WRKDIST}/examples/Master/{example1.conf,example2.conf} \
 		${PREFIX}/share/examples/delphinusdnsd
 
 .include <bsd.port.mk>
