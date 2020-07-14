@@ -1,5 +1,5 @@
 
-DelphinusDNS installed!  Example configuration files can be found under
+delphinusdnsd installed! Example configuration files can be found under
 ${PREFIX}/share/examples/delphinusdnsd.
 
 For more information please read:
