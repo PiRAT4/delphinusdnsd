@@ -1,0 +1,17 @@
+$OpenBSD$
+
+Prevent SEGFAULT.
+
+Index: util.c
+--- util.c.orig
++++ util.c
+@@ -1509,6 +1509,9 @@ rrlookup(char *keyword)
+ {
+ 	static struct rrtab *p; 
+ 
++	if (keyword == NULL)
++		return NULL;
++
+ 	p = bsearch(keyword, myrrtab, sizeof(myrrtab)/sizeof(myrrtab[0]), 
+ 		sizeof(myrrtab[0]), kw_cmp);
+ 	

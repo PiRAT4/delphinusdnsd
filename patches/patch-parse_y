@@ -1,0 +1,16 @@
+$OpenBSD$
+
+Fix compiler warning.
+
+Index: parse.y
+--- parse.y.orig
++++ parse.y
+@@ -3482,7 +3482,7 @@ create_nsec_bitmap(char *rrlist, char *bitmap, int *le
+ 	for (ap = argv; ap < &argv[255] && 
+ 		(*ap = strsep(&rrlist, " ")) != NULL; argc++) {
+ 		
+-		if (*ap != '\0') {
++		if (**ap != '\0') {
+ 			ap++;
+ 		} 
+ 	}
