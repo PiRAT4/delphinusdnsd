@@ -1,6 +1,6 @@
-COMMENT =           Non-caching, non-recursing authoritative DNS server
+COMMENT =           simple authorative DNS server
 DISTNAME =          delphinusdnsd-${VERSION}
-VERSION =           1.4.2
+VERSION =           1.4.3
 PKGNAME =           ${DISTNAME}
 CATEGORIES =        net
 
@@ -14,8 +14,8 @@ PERMIT_PACKAGE =    Yes
 MASTER_SITES =      https://delphinusdns.org/download/
 
 WANTLIB +=          c ssl crypto util
-CFLAGS=             -Wall -g
-LDFLAGS=            -Wall -g
+CFLAGS =            -Wall -g
+LDFLAGS =           -Wall -g
 
 CONFIGURE_STYLE =   simple
 CONFIGURE_ARGS =    --user=_ddd \
