@@ -12,6 +12,12 @@ As soon as this port gets imported to OpenBSD, you'll be able to install it with
 
 ```shell
 $ doas pkg_add delphinusdnsd
+delphinusdnsd-1.4.3: ok
+Read shared items: ok
+The following new rcscripts were installed: /etc/rc.d/delphinusdnsd
+See rcctl(8) for details.
+New and changed readme(s):
+        /usr/local/share/doc/pkg-readmes/delphinusdnsd
 ```
 
 ## Thanks
