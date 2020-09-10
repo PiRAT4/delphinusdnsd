@@ -22,9 +22,9 @@ New and changed readme(s):
 
 ## TODO
 
-[x] Create README instructions 
-[] Add regress testings support
-[] Improve `sign.sh` script
++ Create README instructions 
++ Add regress testings support
++ Improve `sign.sh` script
 
 ## Thanks
 
