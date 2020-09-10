@@ -20,6 +20,12 @@ New and changed readme(s):
         /usr/local/share/doc/pkg-readmes/delphinusdnsd
 ```
 
+## TODO
+
+[x] Create README instructions 
+[] Add regress testings support
+[] Improve `sign.sh` script
+
 ## Thanks
 
 * [Peter J. Philipp](https://delphinusdns.org/credits.html) for developing the software in the first place and for his patience answering all my questions
