@@ -1,7 +1,7 @@
 #!/bin/ksh
 
 daemon="${TRUEPREFIX}/sbin/delphinusdnsd"
-daemon_flags="-f /var/delphinusdnsd/delphinusdns.conf"
+daemon_flags="-f /var/delphinusdnsd/etc/delphinusdns.conf"
 
 . /etc/rc.d/rc.subr
 
