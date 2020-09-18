@@ -1,6 +1,6 @@
 @comment $OpenBSD: PLIST,v$
 @newgroup _ddd:860
-@newuser _ddd:860:_ddd:daemon:DelphinusDNS Account:/var/delphinusdnsd:/sbin/nologin
+@newuser _ddd:860:_ddd:daemon:DelphinusDNSd Account:/noexistent:/sbin/nologin
 @bin sbin/delphinusdnsd
 @bin bin/dddctl
 @man man/man8/delphinusdnsd.8
