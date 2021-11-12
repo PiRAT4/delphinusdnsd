@@ -1,8 +1,12 @@
 COMMENT =           simple authorative DNS server
-DISTNAME =          delphinusdnsd-${VERSION}
-VERSION =           1.4.3
+DISTNAME =          delphinusdnsd-${V}
+V =		    1.5.4
 PKGNAME =           ${DISTNAME}
 CATEGORIES =        net
+
+GH_ACCOUNT =        delphinusdns
+GH_PROJECT =        delphinusdnsd
+GH_TAGNAME =	    RELEASE_1_5_4
 
 HOMEPAGE =          https://delphinusdns.org/
 MAINTAINER =        Ricardo Santos <risantos@pm.me>
@@ -11,21 +15,17 @@ MAINTAINER =        Ricardo Santos <risantos@pm.me>
 PERMIT_PACKAGE =    Yes
 #uses pledge()
 
-MASTER_SITES =      https://delphinusdns.org/download/
-
 WANTLIB +=          c ssl crypto util
-CFLAGS =            -Wall -g
-LDFLAGS =           -Wall -g
 
 CONFIGURE_STYLE =   simple
-CONFIGURE_ARGS =    --user=_ddd \
-                    --location=/var/delphinusdnsd
 
 NO_TEST =           Yes
 
+SEPARATE_BUILD =    Yes
+
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/delphinusdnsd
-	${INSTALL_DATA} ${WRKDIST}/examples/Master/{example1.conf,example2.conf} \
+	${INSTALL_DATA} ${WRKDIST}/examples/Master/*.conf \
 		${PREFIX}/share/examples/delphinusdnsd
 
 .include <bsd.port.mk>

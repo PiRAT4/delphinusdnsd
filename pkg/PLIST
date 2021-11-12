@@ -1,6 +1,6 @@
 @comment $OpenBSD: PLIST,v$
-@newgroup _ddd:860
-@newuser _ddd:860:_ddd:daemon:DelphinusDNSd Account:/noexistent:/sbin/nologin
+@newgroup _ddd:871
+@newuser _ddd:871:_ddd:daemon:DelphinusDNSd Account:/var/delphinusdnsd:/sbin/nologin
 @bin sbin/delphinusdnsd
 @bin bin/dddctl
 @man man/man8/delphinusdnsd.8
@@ -13,5 +13,5 @@
 @owner _ddd
 @group _ddd
 @sample /var/delphinusdnsd/replicant/
-share/examples/delphinusdnsd/example1.conf
-share/examples/delphinusdnsd/example2.conf
+share/examples/delphinusdnsd/master1.conf
+share/examples/delphinusdnsd/master2.conf
